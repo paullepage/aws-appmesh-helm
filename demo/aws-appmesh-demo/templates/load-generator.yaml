@@ -1,5 +1,5 @@
 ---
-apiVersion: appmesh.k8s.aws/v1beta1
+apiVersion: appmesh.k8s.aws/v1beta2
 kind: VirtualNode
 metadata:
   name: load-generator
