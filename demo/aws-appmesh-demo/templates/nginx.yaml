@@ -1,4 +1,4 @@
-apiVersion: appmesh.k8s.aws/v1beta1
+apiVersion: appmesh.k8s.aws/v1beta2
 kind: VirtualService
 metadata:
   name: nginx
@@ -20,7 +20,7 @@ spec:
             - virtualNodeName: nginx
               weight: 100
 ---
-apiVersion: appmesh.k8s.aws/v1beta1
+apiVersion: appmesh.k8s.aws/v1beta2
 kind: VirtualNode
 metadata:
   name: nginx
@@ -57,7 +57,7 @@ spec:
   selector:
     app.kubernetes.io/name: nginx
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
